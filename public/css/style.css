@@ -482,8 +482,8 @@ transition: all .2s linear;
     border-color: #4885b6;
 }
 .socials section+section+section>a>span { /*google +*/
-    background-color: #d73d32;
-    border-color: #E42000;
+    background-color: #16d20d;
+    border-color: #13a60c;
 }
 .socials section+section+section {
     margin-left: 8px;
