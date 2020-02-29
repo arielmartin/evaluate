@@ -1,0 +1,311 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+
+/***************************************************************************************************************/
+#abm_empleados {
+	margin-top: 50px;
+	box-shadow: 0 0 10px rgba(0,0,0,.3);
+	font: 13px/1.55 'Open Sans', Helvetica, Arial, sans-serif;	
+}
+.radios{
+	font: 15px/19px 'Open Sans', Helvetica, Arial, sans-serif;
+	}
+#abm_empleados header {
+	display: block;
+	padding: 10px 20px;	
+	border-bottom: 1px solid rgba(0,0,0,.1);
+	background: rgba(248,248,248,.89);
+	font-size: 25px;
+	font-weight: 300;
+	color: #232323;
+	text-align:center;
+    font-weight: normal;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	background-color: #E5E5E5;
+}
+#abm_empleados fieldset {
+	padding: 25px 30px 5px;
+	border: none;
+	background-color: #F0F0F0;
+}
+#abm_empleados fieldset + fieldset {
+	border-top: 1px solid rgba(0,0,0,.1);
+}
+#abm_empleados section {
+	margin-bottom: 15px;
+}
+
+#abm_empleados .input,
+#abm_empleados .select,
+#abm_empleados .textarea,
+#abm_empleados .radio,
+#abm_empleados .checkbox,
+#abm_empleados .toggle,
+#abm_empleados .button {
+	position: relative;
+	display: block;
+}
+#abm_empleados .input input,
+#abm_empleados .select select,
+#abm_empleados .textarea textarea {
+	display: block;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	height: 39px;
+	padding: 8px 10px;
+	outline: none;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 0;
+	background: #fff;
+	font: 15px/19px 'Open Sans', Helvetica, Arial, sans-serif;
+	color: #404040;
+	appearance: normal;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+}
+/**/
+/* textareas */
+/**/
+#abm_empleados .textarea textarea {
+	height: auto;
+	resize: none;
+}
+#abm_empleados .textarea-resizable textarea {
+	resize: vertical;	
+}
+#abm_empleados .textarea-expandable textarea {
+	height: 39px;
+}
+#abm_empleados .textarea-expandable textarea:focus {
+	height: auto;
+}
+/**/
+/* buttons */
+/**/
+#abm_empleados .button {
+	float: right;
+	height: 39px;
+	overflow: hidden;
+	margin: 10px 0 0 20px;
+	padding: 0 25px;
+	outline: none;
+	border: 0;
+	font: 300 15px/39px 'Open Sans', Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color: #fff;
+	cursor: pointer;
+		border-radius:5px;
+
+}
+
+/**/
+/* tooltips */
+/**/
+#abm_empleados .tooltip {
+	position: absolute;
+	z-index: 1;
+	left: -9999px;
+	padding: 2px 8px 3px;
+	font-size: 12px;
+	line-height: 16px;
+	font-weight: 400;
+	background: #248348;
+	color: #fff;
+	opacity: 0;
+	transition: margin 0.3s, opacity 0.3s;
+	-o-transition: margin 0.3s, opacity 0.3s;
+	-ms-transition: margin 0.3s, opacity 0.3s;
+	-moz-transition: margin 0.3s, opacity 0.3s;
+	-webkit-transition: margin 0.3s, opacity 0.3s;
+}
+#abm_empleados .tooltip:after {
+	content: '';
+	position: absolute;
+}
+#abm_empleados .input input:focus + .tooltip,
+#abm_empleados .textarea textarea:focus + .tooltip {
+	opacity: 1;	
+}
+#abm_empleados .tooltip-top-right {
+	bottom: 100%;
+	margin-bottom: 15px;
+}
+#abm_empleados .tooltip-top-right:after {
+	top: 100%;
+	right: 16px;	
+	border-top: 4px solid rgba(0,0,0,0.9);
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+}
+#abm_empleados .input input:focus + .tooltip-top-right,
+#abm_empleados .textarea textarea:focus + .tooltip-top-right {
+	right: 0;
+	left: auto;
+	margin-bottom: 5px;
+}
+#abm_empleados .tooltip-top-left {
+	bottom: 100%;
+	margin-bottom: 15px;
+}
+#abm_empleados .tooltip-top-left:after {
+	top: 100%;
+	left: 16px;
+	border-top: 4px solid rgba(0,0,0,0.9);
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+}
+#abm_empleados .input input:focus + .tooltip-top-left,
+#abm_empleados .textarea textarea:focus + .tooltip-top-left {
+	right: auto;
+	left: 0;
+	margin-bottom: 5px;
+}
+#abm_empleados .tooltip-right {
+	top: 9px;
+	white-space: nowrap;
+	margin-left: 15px;
+}
+#abm_empleados .tooltip-right:after {
+	top: 6px;
+	right: 100%;
+	border-top: 4px solid transparent;
+	border-right: 4px solid rgba(0,0,0,0.9);
+	border-bottom: 4px solid transparent;
+}
+#abm_empleados .input input:focus + .tooltip-right,
+#abm_empleados .textarea textarea:focus + .tooltip-right {
+	left: 100%;
+	margin-left: 5px;
+}
+#abm_empleados .tooltip-left {
+	top: 9px;
+	white-space: nowrap;
+	margin-right: 15px;
+}
+#abm_empleados .tooltip-left:after {
+	top: 6px;
+	left: 100%;
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+	border-left: 4px solid rgba(0,0,0,0.9);
+}
+#abm_empleados .input input:focus + .tooltip-left,
+#abm_empleados .textarea textarea:focus + .tooltip-left {
+	right: 100%;
+	left: auto;
+	margin-right: 5px;
+}
+#abm_empleados .tooltip-bottom-right {
+	top: 100%;
+	margin-top: 15px;
+}
+#abm_empleados .tooltip-bottom-right:after {
+	bottom: 100%;
+	right: 16px;	
+	border-right: 4px solid transparent;
+	border-bottom: 4px solid rgba(0,0,0,0.9);
+	border-left: 4px solid transparent;
+}
+#abm_empleados .input input:focus + .tooltip-bottom-right,
+#abm_empleados .textarea textarea:focus + .tooltip-bottom-right {
+	right: 0;
+	left: auto;
+	margin-top: 5px;
+}
+#abm_empleados .tooltip-bottom-left {
+	top: 100%;
+	margin-top: 15px;
+}
+#abm_empleados .tooltip-bottom-left:after {
+	bottom: 100%;
+	left: 16px;
+	border-right: 4px solid transparent;
+	border-bottom: 4px solid rgba(0,0,0,0.9);
+	border-left: 4px solid transparent;
+}
+#abm_empleados .input input:focus + .tooltip-bottom-left,
+#abm_empleados .textarea textarea:focus + .tooltip-bottom-left {
+	right: auto;
+	left: 0;
+	margin-top: 5px;
+}
+/**/
+/* normal state */
+/**/
+#abm_empleados .input input,
+#abm_empleados .select select,
+#abm_empleados .textarea textarea,
+#abm_empleados .radio i,
+#abm_empleados .checkbox i,
+#abm_empleados .toggle i,
+#abm_empleados .icon-append,
+#abm_empleados .icon-prepend {
+	border-color: #e5e5e5;
+	transition: border-color 0.3s;
+	-o-transition: border-color 0.3s;
+	-ms-transition: border-color 0.3s;
+	-moz-transition: border-color 0.3s;
+	-webkit-transition: border-color 0.3s;
+}
+#abm_empleados .toggle i:before {
+	background-color: #2da5da;	
+}
+#abm_empleados .rating label {
+	color: #ccc;
+	transition: color 0.3s;
+	-o-transition: color 0.3s;
+	-ms-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	-webkit-transition: color 0.3s;
+}
+#abm_empleados .button {
+	background-color: #248348;
+	opacity: 0.8;
+	transition: opacity 0.2s;
+	-o-transition: opacity 0.2s;
+	-ms-transition: opacity 0.2s;
+	-moz-transition: opacity 0.2s;
+	-webkit-transition: opacity 0.2s;
+}
+#abm_empleados .button.button-secondary {
+	background-color: #b3b3b3;
+}
+#abm_empleados .icon-append,
+#abm_empleados .icon-prepend {
+	color: #ccc;
+}
+/**/
+/* hover state */
+/**/
+#abm_empleados .input:hover input,
+#abm_empleados .select:hover select,
+#abm_empleados .textarea:hover textarea,
+#abm_empleados .radio:hover i,
+#abm_empleados .checkbox:hover i,
+#abm_empleados .toggle:hover i {
+	border-color: #248348;
+}
+#abm_empleados .rating input + label:hover,
+#abm_empleados .rating input + label:hover ~ label {
+	color: #248348;
+}
+#abm_empleados .button:hover {
+	opacity: 1;
+}
+#abm_empleados .button:active {
+	opacity: 1;
+	background-color: #000000;
+}
+/**/
+/* focus state */
+/**/
+#abm_empleados .input input:focus,
+#abm_empleados .select select:focus,
+#abm_empleados .textarea textarea:focus,
+#abm_empleados .radio input:focus + i,
+#abm_empleados .checkbox input:focus + i,
+#abm_empleados .toggle input:focus + i {
+	border-color: #A7A7A7;
+}
