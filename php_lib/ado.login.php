@@ -29,7 +29,7 @@ include_once 'conexion.php';
     $result = mysqli_query($conn, $query);
 
     if (!$result) {
-        trigger_error('Error al ejecutar la consulta SQL: ' . mysql_error(),E_USER_ERROR);
+        trigger_error('Error al ejecutar la consulta SQL: ' . mysqli_error(),E_USER_ERROR);
     }
 
     //3 - extraemos el registro de este usuario

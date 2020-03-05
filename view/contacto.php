@@ -25,47 +25,48 @@
                </figure> 
           </div>
       </div>  -->
-    <div class="clear"></div>
+      <div class="clear"></div>
 	
 	
-    <div class="grid_2" id="">
+      <div class="grid_2" id="">
 	
-        <h4 class="head1">Datos</h4>
-        <p>Evaluate<br>
-         Florencio Varela 1903 <br>
-  	     San Justo</br>
-  	     Buenos Aires, Argentina</p>
-         Tel&eacute;fono (54-11) 4480-8900<br>
-    </div>
+        <h4 class="head1">Dedarrolladores</h4><br>
+         <pre>  Ariel Martin - Diego Chieffo
+  Isidro Casanova
+  La Matanza
+  Buenos Aires, Argentina
+
+  Tel&eacute;fono (011) 4485-7575
+  Celular (15) 5767-3825</pre>
+      </div>
 	
-    <div class="grid_6 prefix_1" id="">
+      <div class="grid_6 prefix_1" id="">
+
       <h4 class="head1">Contacto</h4>
 
       <form id="form_contacto" class="form_contacto" method="post" action="../php_lib/MailHandler.php">
-                      <input type="text" name="nombre" placeholder="Nombre:"/>
-                      <input type="text" name="email" placeholder="E-mail:"/>
-                      <input type="text" name="telefono" class="placeholder" placeholder="Telefono:"/>
-                      <textarea name="mensaje" placeholder="Mensaje:"></textarea>
-                    
-					<div class="clear"></div>
-					  
-					  
-                      <div class="btns" id="">
-					  		<button class="button3" type="submit">ENVIAR</button>
-                      </div>
-			</form> 
-		  
-				
-				
+                        <input type="text" name="nombre" placeholder="Nombre:"/>
+                        <input type="text" name="email" placeholder="E-mail:"/>
+                        <input type="text" name="telefono" class="placeholder" placeholder="Telefono:"/>
+                        <textarea name="mensaje" placeholder="Mensaje:"></textarea>
+                      
+  					<div class="clear"></div>
+  					    
+            <div class="btns" id="">
+  					  		<button class="button3" type="submit">ENVIAR</button>
+            </div>
 
+  		</form> 
+		  
     </div>
-				<div class="grid_3" id="divErrores_contacto">
-					<ul id="lista" class="aclaracion"></ul>
-				</div>
-	
+
+  	<div class="grid_3" id="divErrores_contacto">
+  				<ul id="lista" class="aclaracion"></ul>
+  	</div>
 	
   </div>
 </div>
+
 <!--==============================footer=================================-->
 	<?php include("footer/pie.php"); ?>
 </body>

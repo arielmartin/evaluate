@@ -19,14 +19,14 @@ class Conexion  // se declara una clase para hacer la conexion con la base de da
     }
 
 
-
-	function Close() { // cierra la conexion
+	public function Close() { // cierra la conexion
 	
 		/*mysql_close($this->con);*/
 		    if ($this->conexion) {
             mysqli_close($this->conexion);
         }
     }
+
 
 	public function desconectar() { // cierra la conexion
 	

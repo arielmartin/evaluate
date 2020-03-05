@@ -2,6 +2,7 @@
 include_once 'conexion.php';
 
 
+
 	#Verifia si existe una tabla en la BD, retorna 1 si existe, 0 si no existe
 	function check_table($table){
 
@@ -198,3 +199,4 @@ include_once 'conexion.php';
 
 		return $result;	
 	}
+
