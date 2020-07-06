@@ -6,9 +6,9 @@
  /************** Config Deply ***************
  
 $mysql_host = "localhost";
-$mysql_database = "id12717289_evaluate";
-$mysql_user = "id12717289_evaluate";
-$mysql_password = "arielm80";
+$mysql_database = "";
+$mysql_user = "";
+$mysql_password = "";
 
 define('HOST',$mysql_host);
 define('USER',$mysql_user);
